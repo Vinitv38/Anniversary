@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay-Snehal</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(248, 87, 114); /* Add a background color */
+  }
+
+  .container {
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+    height: 80%; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 20px; /* Add border radius for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-height: 100%;
+    width: 100%;
+    user-select: none;
+    filter: brightness(0.7) contrast(1.2); /* Adjust brightness and contrast for background image */
+  }
+
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for depth */
+    animation: slideIn 2s ease-in-out; /* Add animation for extra flair */
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .continue-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .continue-button:hover {
+    background-color: pink;
+    color:black
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/4.jpg" alt="Background Image" class="background-image">
+  <h1 class="heading">HAPPIEST FIRST ANNIVERSARY </h1> <!-- Updated heading text -->
+</div>
+
+<button onclick="location.href='second.html'" class="continue-button">Continue</button>
+
+</body>
+</html>
